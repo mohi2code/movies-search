@@ -11,7 +11,7 @@ const movies = document.querySelector('#movies .container');
     value = value.replace(/ +/g, ' ');
     value = value.replace(/ /g, '+');
 
-    const response = await fetch(`http://www.omdbapi.com/?s=${value}&apikey=d15a4c6d`);
+    const response = await fetch(`https://www.omdbapi.com/?s=${value}&apikey=d15a4c6d`);
     const data     = (await response.json()).Search;
 
     if (data) {
