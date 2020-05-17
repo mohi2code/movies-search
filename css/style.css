@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 input {
   font-family: 'Roboto', sans-serif;
   outline: none;
+  border-radius: 0;
 }
 
 /* Components */
@@ -133,6 +134,10 @@ header form #search {
 @media all and (max-width:600px) {
   .container {
     width: 100%;
+  }
+
+  header .container {
+    border-radius: 0;
   }
 
   header .heading {
